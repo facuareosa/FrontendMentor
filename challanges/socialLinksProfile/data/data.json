@@ -1,0 +1,24 @@
+{
+  "redes": [
+    {
+      "nombre": "GitHub",
+      "link": "-"
+    },
+    {
+      "nombre": "Frontend Mentor",
+      "link": "-"
+    },
+    {
+      "nombre": "Linkedin",
+      "link": "-"
+    },
+    {
+      "nombre": "Twitter",
+      "link": "-"
+    },
+    {
+      "nombre": "Instagram",
+      "link": "-"
+    }
+  ]
+}
