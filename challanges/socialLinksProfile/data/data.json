@@ -2,23 +2,27 @@
   "redes": [
     {
       "nombre": "GitHub",
-      "link": "-"
+      "link": "https://github.com/facuareosa"
     },
     {
       "nombre": "Frontend Mentor",
-      "link": "-"
+      "link": "https://www.frontendmentor.io/home"
     },
     {
       "nombre": "Linkedin",
-      "link": "-"
+      "link": "https://linkedin.com/in/facuareosa"
     },
     {
       "nombre": "Twitter",
-      "link": "-"
+      "link": "https://twitter.com/FacuAreosa"
     },
     {
       "nombre": "Instagram",
-      "link": "-"
+      "link": "https://www.instagram.com/facu.areosa/"
+    },
+    {
+      "nombre": "Portfolio",
+      "link": "https://facuareosa.com"
     }
   ]
 }
