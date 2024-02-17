@@ -2,12 +2,12 @@
     "desafio": [
       {
         "nombre": "Componente QR",
-        "img": "../challanges/qr-Component/assets/images/qrComponentImg.png",
+        "img": "../../challanges/qr-Component/assets/images/qrComponentImg.png",
         "to":"/qrComponent"
       },
       {
         "nombre": "Social Card",
-        "img": "../challanges/socialLinksProfile/assets/images/socialLinksProfileImg.png",
+        "img": "../../challanges/socialLinksProfile/assets/images/socialLinksProfileImg.png",
         "to":"/socialLinksProfile"
       }
     ]
