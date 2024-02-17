@@ -1,5 +1,5 @@
 import React from 'react'
-import qrImg from './images/image-qr-code.png'
+import qrImg from './assets/images/image-qr-code.png'
 import styles from './QrComponent.module.css'
 
 function QrComponent() {

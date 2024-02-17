@@ -1,4 +1,4 @@
-import Home from '../pages/Home'
+import Home from '../pages/home/Home'
 import './reset.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import QrComponent from '../challanges/qr-Component/QrComponent'
