@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home/>} />
           <Route path='/qrComponent' element={<QrComponent />}/>
           <Route path='/socialLinksProfile' element={<SocialLinksProfile />} />
         </Routes>
