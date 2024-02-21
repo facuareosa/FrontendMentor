@@ -9,6 +9,11 @@
         "nombre": "Social Card",
         "img": "socialLinksProfileImg",
         "to":"/socialLinksProfile"
+      },
+      {
+        "nombre": "Menu Acordeon",
+        "img": "menuAcordeonImg",
+        "to":"/acordeonMenu"
       }
     ]
   }
