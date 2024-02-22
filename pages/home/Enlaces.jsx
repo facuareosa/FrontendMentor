@@ -5,13 +5,15 @@ import styles from "./Enlaces.module.css";
 import qrComponentImg from "../../challanges/qr-Component/assets/images/qrComponentImg.png";
 import socialLinksProfileImg from "../../challanges/socialLinksProfile/assets/images/socialLinksProfileImg.png";
 import menuAcordeonImg from "../../challanges/menu-acordeon/assets/images/menuAcordeonImg.png"
+import ratingComponentImg from "../../challanges/rating-component/assets/images/ratingComponentImg.png"
 
 
 
 const images = {
   qrComponentImg,
   socialLinksProfileImg,
-  menuAcordeonImg
+  menuAcordeonImg,
+  ratingComponentImg
 };
 
 function Enlaces() {

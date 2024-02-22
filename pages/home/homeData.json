@@ -17,7 +17,7 @@
       },
       {
         "nombre": "Rating",
-        "img": "menuAcordeonImg",
+        "img": "ratingComponentImg",
         "to":"/ratingApp"
       }
     ]
