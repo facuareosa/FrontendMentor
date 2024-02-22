@@ -14,6 +14,11 @@
         "nombre": "Menu Acordeon",
         "img": "menuAcordeonImg",
         "to":"/acordeonMenu"
+      },
+      {
+        "nombre": "Rating",
+        "img": "menuAcordeonImg",
+        "to":"/ratingApp"
       }
     ]
   }
