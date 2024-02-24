@@ -19,6 +19,11 @@
         "nombre": "Rating",
         "img": "ratingComponentImg",
         "to":"/ratingApp"
+      },
+      {
+        "nombre": "To Do App",
+        "img": "ratingComponentImg",
+        "to":"/todoApp"
       }
     ]
   }

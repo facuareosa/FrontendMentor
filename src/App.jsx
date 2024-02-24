@@ -6,6 +6,8 @@ import QrComponent from '../challanges/qr-Component/QrComponent'
 import SocialLinksProfile from '../challanges/socialLinksProfile/SocialLinksProfile'
 import AcordeonApp from '../challanges/menu-acordeon/AcordeonApp'
 import RatingApp from '../challanges/rating-component/RatingApp'
+import TodoApp from '../challanges/todo-component/TodoApp'
+
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
           <Route path='/socialLinksProfile' element={<SocialLinksProfile />} />
           <Route path='/acordeonMenu' element={<AcordeonApp />} />
           <Route path='/ratingApp' element={<RatingApp />} />
+          <Route path='/todoApp' element={<TodoApp />} />
         </Routes>
       </BrowserRouter>
     </>
