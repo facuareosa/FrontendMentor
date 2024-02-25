@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from './components/Header'
 import Input from './components/Input'
+import List from './components/List'
 
 function TodoApp() {
   return (
-    <div className='container w-80 flex flex-col'>
+    <div className='flex flex-col px-4 bg-white'>
         <Header />
         <Input />
+        <List />
     </div>
   )
 }
