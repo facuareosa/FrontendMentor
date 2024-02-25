@@ -1,22 +1,5 @@
-import React, { useState } from "react";
-
-function Input() {
-  const [inputValue,setInputValue] = useState("")
-
-  const handleChange = (event) =>{
-    setInputValue(event.target.value)
-  }
-  const handleKeyDown = (event) =>{
-    if (event.key === 'Enter'){
-      console.log(inputValue)
-      setInputValue("")
-    }
-  }
-  const handleOnClick = () =>{
-    console.log(inputValue)
-    setInputValue("")
-  }
-
+function Input({ inputValue, handleChange, handleKeyDown, handleOnClick }) {
+  
   return (
     <div className="flex border border-solid border-white">
       <span>o</span>
@@ -34,3 +17,4 @@ function Input() {
 }
 
 export default Input;
+  
