@@ -1,10 +1,10 @@
 import React from 'react'
 import ListElements from './ListElements'
 
-function List({listItems}) {
+function List({listItems, setListItems}) {
   return (
     <ul>
-        <ListElements listItems={listItems} />
+        <ListElements listItems={listItems} setListItems={setListItems}/>
     </ul>
   )
 }

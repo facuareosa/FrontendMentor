@@ -12,13 +12,13 @@ function TodoApp() {
   }
   const handleKeyDown = (event) =>{
     if (event.key === 'Enter'){
-      const newItem = inputValue
+      const newItem = {text:inputValue, completed:false}
       setListItems([...listItems, newItem]);
       setInputValue("")
     }
   }
   const handleOnClick = () =>{
-    const newItem = inputValue
+    const newItem = {text:inputValue, completed:false}
     setListItems([...listItems, newItem]);
     setInputValue("")
   }
@@ -32,7 +32,7 @@ function TodoApp() {
           handleKeyDown={handleKeyDown}
           handleOnClick={handleOnClick}
         />
-        <List listItems={listItems}/>
+        <List listItems={listItems} setListItems={setListItems}/>
     </div>
   )
 }
