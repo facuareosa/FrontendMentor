@@ -26,7 +26,7 @@ function ListElements({listItems, setListItems}) {
                     </span>
                     <p className='text-red-500'>{item.text}</p>
                 </div>
-                <span onClick={()=>handleErase}>x</span>
+                <span onClick={()=>handleErase(index)}>x</span>
             </li>
         :   <li className='flex justify-between' key={index}>
                 <div className='flex gap-2'>
