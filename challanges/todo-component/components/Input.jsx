@@ -1,5 +1,14 @@
-function Input({ inputValue, handleChange, handleKeyDown, handleOnClick }) {
+function Input({ inputValue, setInputValue, handleAddItem }) {
   
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleAddItem();
+    }
+  };
   return (
     <div className="flex border border-solid border-white">
       <span>o</span>
@@ -11,7 +20,7 @@ function Input({ inputValue, handleChange, handleKeyDown, handleOnClick }) {
         onChange={handleChange}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleOnClick}className="bg-white">ok!</button>
+      <button onClick={handleAddItem}className="bg-white">ok!</button>
     </div>
   );
 }

@@ -1,23 +1,22 @@
 import React from 'react'
 import checkImg from '../assets/images/icon-check.svg'
 
-function ListElements({listItems, setListItems}) {
+function ListElements({filteredList, setListItems}) {
     
     const handleErase = (index) => {
-        const newList = listItems.filter((_,i) => i !== index); //se utiliza _ para indicar una variable que no se usa pero es necesaria.
-        setListItems(newList);
-    };
-    const handleCompleted = (index) =>{
-        const newList = listItems.map((item,i) =>{
-            if (i===index) {
-                return {...item, completed: !item.completed}; 
-            }
-        return item;
-        });
-        setListItems(newList)
-    }
+        setListItems((items) =>
+          items.filter((_, i) => i !== index)
+        );
+      };
+      const handleCompleted = (index) => {
+        setListItems((items) =>
+          items.map((item, i) =>
+            i === index ? { ...item, completed: !item.completed } : item
+          )
+        );
+      };
 
-    const items = listItems.map((item,index) =>{
+    const items = filteredList.map((item,index) =>{
         return (item.completed===true) 
         ?   <li className='flex justify-between' key={index}>
                 <div className='flex gap-2'>

@@ -7,30 +7,23 @@ function TodoApp() {
   const [inputValue,setInputValue] = useState("");
   const [listItems, setListItems] = useState([]);
 
-  function handleChange(event) {
-    setInputValue(event.target.value);
-  }
-  const handleKeyDown = (event) =>{
-    if (event.key === 'Enter'){
-      const newItem = {text:inputValue, completed:false}
+  const handleAddItem = () => {
+    if (inputValue !== '') {
+      const newItem = { text: inputValue, completed: false };
       setListItems([...listItems, newItem]);
-      setInputValue("")
+      setInputValue('');
+    }else{
+      alert("No se puede agregar tarea sin texto.")
     }
-  }
-  const handleOnClick = () =>{
-    const newItem = {text:inputValue, completed:false}
-    setListItems([...listItems, newItem]);
-    setInputValue("")
-  }
+  };
 
   return (
     <div className='flex flex-col px-4 bg-white'>
         <Header />
         <Input
           inputValue={inputValue}
-          handleChange={handleChange}
-          handleKeyDown={handleKeyDown}
-          handleOnClick={handleOnClick}
+          setInputValue={setInputValue}
+          handleAddItem={handleAddItem}
         />
         <List listItems={listItems} setListItems={setListItems}/>
     </div>
