@@ -18,14 +18,16 @@ function TodoApp() {
   };
 
   return (
-    <div className='flex flex-col px-4 bg-white'>
-        <Header />
-        <Input
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          handleAddItem={handleAddItem}
-        />
-        <List listItems={listItems} setListItems={setListItems}/>
+    <div className='flex justify-center items-center h-screen bg-blue-400 font-concert'>
+      <div className='flex flex-col px-4 w-80 md:w-96'>
+          <Header />
+          <Input
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+            handleAddItem={handleAddItem}
+          />
+          <List listItems={listItems} setListItems={setListItems}/>
+      </div>
     </div>
   )
 }

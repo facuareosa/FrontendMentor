@@ -15,7 +15,8 @@ function RatingApp() {
   };
 
   return (
-    <div className="h-screen w-screen flex justify-center items-center">
+
+    <div className="h-screen w-screen flex justify-center items-center bg-slate-900">
       {submitted ? (
         <Thks rating={rating} />
       ) : (

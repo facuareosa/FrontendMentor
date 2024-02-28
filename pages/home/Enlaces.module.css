@@ -7,9 +7,8 @@
     gap:1rem;
     text-decoration: none;
     border-radius: 50px;
-    background: #222222;
-    box-shadow:  18px 18px 36px #1d1d1d,
-                 -18px -18px 36px #272727;
+    background: rgb(2 6 23);
+    box-shadow: 18px 18px 36px #0c1134, -18px -18px 36px #180a27;
     transition: all 0.3s ease;
 
 }

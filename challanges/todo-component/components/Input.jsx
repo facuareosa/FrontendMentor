@@ -10,7 +10,7 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
     }
   };
   return (
-    <div className="flex border border-solid border-white">
+    <div className="flex my-6">
       <span>o</span>
       <input
         type="text"

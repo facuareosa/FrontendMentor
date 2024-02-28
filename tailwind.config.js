@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html","./src/**/*.{html,js,jsx}","./challanges/**/*.{js,jsx}","./pages/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        concert: ['Concert One']
+      }
+    },
   },
   plugins: [],
 }
