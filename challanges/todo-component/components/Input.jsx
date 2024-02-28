@@ -10,17 +10,19 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
     }
   };
   return (
-    <div className="flex my-6">
-      <span>o</span>
-      <input
-        type="text"
-        placeholder="que más agregamos?"
-        value={inputValue}
-        className="bg-transparent border-none w-full"
-        onChange={handleChange}
-        onKeyDown={handleKeyDown}
-      />
-      <button onClick={handleAddItem}className="bg-white">ok!</button>
+    <div className="flex justify-between p-2 my-6 bg-gray-200 rounded-xl">
+      <div className="flex items-center w-full gap-2">
+        <span className='h-6 w-6 rounded-full border-solid border border-gray-500'></span>
+        <input
+          type="text"
+          placeholder="que más agregamos?"
+          value={inputValue}
+          className="bg-transparent border-none focus:outline-gray-500 w-auto placeholder:text-gray-600"
+          onChange={handleChange}
+          onKeyDown={handleKeyDown}
+        />
+      </div>
+      <button onClick={handleAddItem}className="bg-red-500 p-1 rounded-md bg-gradient-to-b from-blue-900 to-blue-950 text-white">OK!</button>
     </div>
   );
 }

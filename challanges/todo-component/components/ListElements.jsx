@@ -29,7 +29,7 @@ function ListElements({filteredList, setListItems}) {
             </li>
         :   <li className='flex justify-between' key={index}>
                 <div className='flex gap-2'>
-                    <span onClick={()=>handleCompleted(index)} className='h-6 w-6 rounded-full border-solid border-black border' />
+                    <span onClick={()=>handleCompleted(index)} className='h-6 w-6 rounded-full border-solid border border-gray-500' />
                     <p>{item.text}</p>
                 </div>
                 <span onClick={()=>handleErase(index)}>x</span>

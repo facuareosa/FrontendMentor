@@ -18,7 +18,7 @@ function TodoApp() {
   };
 
   return (
-    <div className='flex justify-center items-center h-screen bg-blue-400 font-concert'>
+    <div className='flex justify-center items-center h-screen font-concert'>
       <div className='flex flex-col px-4 w-80 md:w-96'>
           <Header />
           <Input
