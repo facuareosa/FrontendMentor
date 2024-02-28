@@ -4,7 +4,8 @@ import ListElements from './ListElements'
 function List({listItems, setListItems}) {
 
   const [filteredList, setFilteredList] = useState(listItems)
-  
+  const [activeFilter, setActiveFilter] = useState('all');
+
   useEffect(() => {
     setFilteredList(listItems);
   }, [listItems]);
@@ -13,9 +14,11 @@ function List({listItems, setListItems}) {
     mostrarTodo 
     ? setFilteredList(listItems) 
     : setFilteredList(listItems.filter((item) => item.completed===false))
+    setActiveFilter(mostrarTodo ? 'all' : 'incomplete');
   }
   const showCompleted = ()=>{
     setFilteredList(listItems.filter((items)=> items.completed===true))
+    setActiveFilter('completed');
   }
   const eraseCompleted = ()=>{
     setListItems(items => items.filter(item => !item.completed))
@@ -25,14 +28,16 @@ function List({listItems, setListItems}) {
   }
   return (
     <div>
-      <ul>
+      <ul className='min-h-80 bg-gray-200 rounded-xl'>
           <ListElements filteredList={filteredList} listItems={listItems} setListItems={setListItems}/>
       </ul>
-      <p onClick={()=>filterList(true)}>Mostrar Todos</p>
-      <p onClick={()=>filterList(false)}>Mostrar solo incompletos</p>
-      <p onClick={eraseCompleted}>Eliminar completos</p>
-      <p onClick={showCompleted}>Mostrar Completos</p>
-      <p>{showTaskLeft()}</p>
+      <div className='flex items-center gap-5 p-2 text-gray-600 text-xs text-center'>
+        <p>{showTaskLeft()} por realizar</p>
+        <p className={`hover:text-blue-500 hover:cursor-pointer ${activeFilter === 'all' ? 'text-blue-500' : ''}`} onClick={()=>filterList(true)}>Todos</p>
+        <p className={`hover:text-blue-500 hover:cursor-pointer ${activeFilter === 'incomplete' ? 'text-blue-500' : ''}`} onClick={()=>filterList(false)}>Incompletos</p>
+        <p className={`hover:text-blue-500 hover:cursor-pointer ${activeFilter === 'completed' ? 'text-blue-500' : ''}`} onClick={showCompleted}>Completos</p>
+        <p className='hover:text-blue-500 hover:cursor-pointer' onClick={eraseCompleted}>Eliminar completos</p>
+      </div>
     </div>
   )
 }

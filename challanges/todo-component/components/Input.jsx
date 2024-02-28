@@ -17,12 +17,12 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
           type="text"
           placeholder="que más agregamos?"
           value={inputValue}
-          className="bg-transparent border-none focus:outline-gray-500 w-auto placeholder:text-gray-600"
+          className="bg-transparent w-3/4 border-none focus:outline-gray-500 placeholder:text-gray-600"
           onChange={handleChange}
           onKeyDown={handleKeyDown}
         />
       </div>
-      <button onClick={handleAddItem}className="bg-red-500 p-1 rounded-md bg-gradient-to-b from-blue-900 to-blue-950 text-white">OK!</button>
+      <button onClick={handleAddItem} className="h-8 w-8 p-1 rounded-md bg-gradient-to-b from-blue-900 to-blue-950 text-white">OK!</button>
     </div>
   );
 }
