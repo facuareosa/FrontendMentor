@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Input from './components/Input'
 import List from './components/List'
 import bgDesktop from './assets/images/bg-desktop.jpg'
+import ToHomeBtn from '../../pages/home/ToHomeBtn'
 
 function TodoApp() {
   const [inputValue,setInputValue] = useState("");
@@ -19,7 +20,7 @@ function TodoApp() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${bgDesktop})` }} className='flex justify-center items-center h-screen bg-no-repeat bg-cover dark:bg-neutral-700 xl:bg-contain   font-concert'>
+    <div style={{ backgroundImage: `url(${bgDesktop})` }} className='flex justify-center items-center h-screen bg-no-repeat dark:bg-neutral-700 xl:bg-contain   font-concert'>
       <div className='flex flex-col px-4 w-80 md:w-96'>
           <Header />
           <Input
@@ -28,6 +29,7 @@ function TodoApp() {
             handleAddItem={handleAddItem}
           />
           <List listItems={listItems} setListItems={setListItems}/>
+          <ToHomeBtn />
       </div>
     </div>
   )

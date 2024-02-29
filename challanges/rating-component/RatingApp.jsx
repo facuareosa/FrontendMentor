@@ -2,6 +2,7 @@ import React from "react";
 import RatingForm from "./components/RatingForm";
 import { useState } from "react";
 import Thks from "./components/Thks";
+import ToHomeBtn from "../../pages/home/ToHomeBtn";
 
 function RatingApp() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,12 +17,13 @@ function RatingApp() {
 
   return (
 
-    <div className="h-screen w-screen flex justify-center items-center bg-slate-900">
+    <div className="h-screen w-screen flex flex-col justify-center items-center bg-slate-900">
       {submitted ? (
         <Thks rating={rating} />
       ) : (
         <RatingForm onSubmit={handleSubmit} onRatingChange={handleRating} />
       )}
+      <ToHomeBtn />
     </div>
   );
 }

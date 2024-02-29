@@ -22,7 +22,7 @@
       },
       {
         "nombre": "To Do App",
-        "img": "ratingComponentImg",
+        "img": "todoAppImg",
         "to":"/todoApp"
       }
     ]

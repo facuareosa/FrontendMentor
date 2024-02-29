@@ -26,7 +26,7 @@ function Header() {
   
   return (
     <div className='flex justify-between items-center p-2 bg-transparent my-8'>
-        <h2 className='text-white dark:text-black text-4xl font-bold'>To Do App</h2>
+        <h2 className='text-white  text-4xl font-bold dark:text-neutral-900'>TO DO APP</h2>
         {theme === "dark" 
           ? <img onClick={handleTheme} src={sunImg} alt='boton ligh mode' className='w-5 h-5'/>
           : <img onClick={handleTheme} src={moonImg} alt='boton dark mode' className='w-5 h-5'/>

@@ -3,6 +3,7 @@ import RedesData from "./data/data.json";
 import Button from "./components/Button";
 import styles from "./SocialLinksProfile.module.css";
 import profileImg from "./assets/images/Facu-perfilSquare.jpg";
+import ToHomeBtn from "../../pages/home/ToHomeBtn";
 
 function SocialLinksProfile() {
   const redes = RedesData.redes;
@@ -24,6 +25,7 @@ function SocialLinksProfile() {
           </div>
           <div className={styles.app__btnContainer}>{buttonRender()}</div>
         </div>
+        <ToHomeBtn />
       </div>
   );
 }

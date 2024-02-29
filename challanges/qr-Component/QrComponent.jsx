@@ -1,6 +1,7 @@
 import React from 'react'
 import qrImg from './assets/images/image-qr-code.png'
 import styles from './QrComponent.module.css'
+import ToHomeBtn from '../../pages/home/ToHomeBtn'
 
 function QrComponent() {
   return (
@@ -12,6 +13,7 @@ function QrComponent() {
         <p className={styles.app__text}>Scan the QR code to vist Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </div>
+    <ToHomeBtn />
   </div>
   )
 }

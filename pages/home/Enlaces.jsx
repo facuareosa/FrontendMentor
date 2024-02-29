@@ -4,8 +4,9 @@ import homeData from "./homeData.json";
 import styles from "./Enlaces.module.css";
 import qrComponentImg from "../../challanges/qr-Component/assets/images/qrComponentImg.png";
 import socialLinksProfileImg from "../../challanges/socialLinksProfile/assets/images/socialLinksProfileImg.png";
-import menuAcordeonImg from "../../challanges/menu-acordeon/assets/images/menuAcordeonImg.png"
-import ratingComponentImg from "../../challanges/rating-component/assets/images/ratingComponentImg.png"
+import menuAcordeonImg from "../../challanges/menu-acordeon/assets/images/menuAcordeonImg.png";
+import ratingComponentImg from "../../challanges/rating-component/assets/images/ratingComponentImg.png";
+import todoAppImg from "../../challanges/todo-component/assets/images/todoAppImg.png"
 
 
 
@@ -13,7 +14,8 @@ const images = {
   qrComponentImg,
   socialLinksProfileImg,
   menuAcordeonImg,
-  ratingComponentImg
+  ratingComponentImg,
+  todoAppImg
 };
 
 function Enlaces() {
