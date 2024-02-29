@@ -19,7 +19,7 @@ function TodoApp() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${bgDesktop})` }} className='flex justify-center items-center h-screen bg-no-repeat bg-cover xl:bg-contain   font-concert'>
+    <div style={{ backgroundImage: `url(${bgDesktop})` }} className='flex justify-center items-center h-screen bg-no-repeat bg-cover dark:bg-neutral-700 xl:bg-contain   font-concert'>
       <div className='flex flex-col px-4 w-80 md:w-96'>
           <Header />
           <Input

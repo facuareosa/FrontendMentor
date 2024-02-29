@@ -10,7 +10,7 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
     }
   };
   return (
-    <div className="flex justify-between p-2 my-6 bg-gray-200 rounded-xl">
+    <div className="flex justify-between p-2 my-6 bg-gray-300 rounded-xl">
       <div className="flex items-center w-full gap-2">
         <span className='h-6 w-6 rounded-full border-solid border border-gray-500'></span>
         <input

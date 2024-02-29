@@ -28,10 +28,10 @@ function List({listItems, setListItems}) {
   }
   return (
     <div>
-      <ul className='min-h-80 bg-gray-200 rounded-xl'>
+      <ul className='min-h-80 bg-gray-300 rounded-xl'>
           <ListElements filteredList={filteredList} listItems={listItems} setListItems={setListItems}/>
       </ul>
-      <div className='grid grid-cols-2 sm:flex items-center gap-5 p-2 mt-4 bg-gray-200 rounded-xl text-gray-600 text-xs text-center'>
+      <div className='grid grid-cols-2 sm:flex items-center gap-5 p-2 mt-4 bg-gray-300 rounded-xl text-gray-600 text-xs text-center'>
         <p>{showTaskLeft()} por realizar</p>
         <div className='order-2 col-span-2 sm:order-none flex gap-5 p-2 justify-between'>
           <p className={`hover:text-blue-500 hover:cursor-pointer ${activeFilter === 'all' ? 'text-blue-500' : ''}`} onClick={()=>filterList(true)}>Todos</p>

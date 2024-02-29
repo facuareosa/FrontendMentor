@@ -19,7 +19,7 @@ function ListElements({ filteredList, setListItems }) {
     
     ?(
       <li
-        className="flex justify-between px-2 py-1 bg-gray-200 rounded-xl"
+        className="flex justify-between px-2 py-1 rounded-xl"
         key={index}
       >
         <div className="flex gap-2">
@@ -32,7 +32,7 @@ function ListElements({ filteredList, setListItems }) {
     
     :(
       <li
-        className="flex justify-between px-2 py-1 bg-gray-200 rounded-xl"
+        className="flex justify-between px-2 py-1 rounded-xl"
         key={index}
       >
         <div className="flex gap-2">
