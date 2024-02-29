@@ -15,7 +15,7 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
         <span className='h-6 w-6 rounded-full border-solid border border-gray-500'></span>
         <input
           type="text"
-          placeholder="que más agregamos?"
+          placeholder="Qué más agregamos?"
           value={inputValue}
           className="bg-transparent w-3/4 border-none focus:outline-gray-500 placeholder:text-gray-600"
           onChange={handleChange}
