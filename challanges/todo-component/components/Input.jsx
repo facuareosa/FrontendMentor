@@ -22,7 +22,7 @@ function Input({ inputValue, setInputValue, handleAddItem }) {
           onKeyDown={handleKeyDown}
         />
       </div>
-      <button onClick={handleAddItem} className="h-8 w-8 p-1 rounded-md bg-gradient-to-b from-blue-900 to-blue-950 text-white">OK!</button>
+      <button onClick={handleAddItem} className="h-7 w-7 px-1 rounded-md bg-gradient-to-b from-blue-900 to-blue-950 text-white">OK!</button>
     </div>
   );
 }
